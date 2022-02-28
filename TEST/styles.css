@@ -1,0 +1,135 @@
+body{
+    background-color: #4bd;
+}
+
+h1{
+    margin: 0;
+    background: linear-gradient(to left, rgb(131, 255, 214), rgb(0, 137, 190));
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    text-decoration: underline;
+    border: dashed, 2px, black;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.Home-div{
+    border: 2px, cyan;
+}
+
+.menu-fieldset{
+    border: none;
+}
+
+.container{
+    display: inline-block;
+    position: fixed;
+}
+
+.menuFieldBorderName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: darkblue;
+}
+
+ #menuPontok{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    text-align: left;
+    font-weight: 300;
+    padding: 3px;
+ }
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.btn{
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    --accent-color: aquamarine;
+}
+
+.home-btn.btn-background-slide::before{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    
+    transition: transform .2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.home-btn.btn-background-slide:hover::before,
+.home-btn.btn-background-slide:focus::before{
+    transform: scaleY(1);
+}
+
+.random-btn.btn-background-slide::before{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    
+    transition: transform .2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.random-btn.btn-background-slide:hover::before,
+.random-btn.btn-background-slide:focus::before{
+    transform: scaleY(1);
+}
+.color-btn.btn-background-slide::before{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    
+    transition: transform .2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.color-btn.btn-background-slide:hover::before,
+.color-btn.btn-background-slide:focus::before{
+    transform: scaleY(1);
+}
+
+
+
+
+ .home-btn.btn-background-slide{
+     z-index: 1;
+ }
+
+ .randomText{
+     text-align: center;
+ }
